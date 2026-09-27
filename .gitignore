@@ -1,0 +1,23 @@
+# Competition and generated material
+data/
+artifacts/
+reports/
+submissions/
+models/
+weights/
+*.csv
+*.parquet
+*.npz
+*.npy
+*.onnx
+*.zip
+*.tar
+*.tar.gz
+
+# Local state
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
