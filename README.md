@@ -7,8 +7,10 @@ competition.
 The repository keeps first-party training, selection, validation, and
 Kaggle-operation tooling together with the decision notes that explain why a
 method was tried. It is deliberately not a mirror of competition downloads,
-third-party notebooks, public discussion pages, model weights, or submission
-files.
+third-party notebooks, public discussion pages, or copied upstream weights.
+Eligible first-party model and submission artifacts are released separately
+with their own provenance manifests and checksums, rather than mixed into the
+source history.
 
 ## What is here
 

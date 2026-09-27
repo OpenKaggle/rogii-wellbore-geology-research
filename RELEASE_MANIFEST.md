@@ -12,8 +12,12 @@
 - 3.96 GiB of local Parquet feature/OOF artifacts and the larger derived CSV
   corpus, pending a field-level schema/rights review and an appropriate
   artifact host;
-- model weights, caches, `__pycache__`, generated submissions, downloaded
+- copied upstream model weights, caches, `__pycache__`, downloaded
   leaderboards, scraped pages, discussion copies, and third-party kernels;
+- first-party model and submission artifacts from this initial **source**
+  release. Eligible artifacts are published separately with their producing
+  revision, source/model provenance, file hashes, and a documented artifact
+  host;
 - credentials, cookies, tokens, local paths, and private mapping material.
 
 ## Verification
