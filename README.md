@@ -1,4 +1,4 @@
-# [2026-09] ROGII Wellbore Geology Research Archive
+# [2026-08] ROGII Wellbore Geology Research Archive
 
 An OpenKaggle source-and-evidence archive for work around the
 [ROGII Wellbore Geology Prediction](https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction)
