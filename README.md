@@ -1,8 +1,15 @@
-# ROGII Wellbore Geology research
+# [2026-09] ROGII Wellbore Geology Research Archive
 
 An OpenKaggle source-and-evidence archive for work around the
 [ROGII Wellbore Geology Prediction](https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction)
 competition.
+
+## Contribution summary
+
+This snapshot contributes first-party selection, validation, and Kaggle-
+operation tooling, decision notes, and metadata-only schema/aggregate evidence.
+Row-level features, OOF/Parquet data, and official or third-party material are
+deliberately not redistributed.
 
 The repository keeps first-party training, selection, validation, and
 Kaggle-operation tooling together with the decision notes that explain why a
@@ -74,3 +81,21 @@ for the organization-wide policy.
    any new derived evidence.
 
 This is an independent community archive, not a Kaggle or ROGII product.
+
+## Cite this repository
+
+For this source snapshot, cite [`CITATION.cff`](CITATION.cff) or
+[`CITATION.bib`](CITATION.bib) and use the tagged
+[`snapshot-2026-09`](https://github.com/OpenKaggle/rogii-wellbore-geology-research/tree/snapshot-2026-09)
+source state. The metadata-only boundary does not authorize citation or
+redistribution of the excluded row-level corpus.
+
+## References
+
+- [ROGII Wellbore Geology Prediction](https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction)
+- [OpenKaggle publishing guide](https://github.com/OpenKaggle/.github/blob/main/PUBLISHING.md)
+
+## Release
+
+- Snapshot: [`snapshot-2026-09`](https://github.com/OpenKaggle/rogii-wellbore-geology-research/tree/snapshot-2026-09)
+- Boundary and receipts: [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)

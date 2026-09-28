@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: >-
+  If you use this snapshot, please cite the versioned source archive and
+  review its metadata-only boundary before using the official inputs.
+title: ROGII Wellbore Geology Research Archive
+type: software
+authors:
+  - name: OpenKaggle contributors
+repository-code: https://github.com/OpenKaggle/rogii-wellbore-geology-research
+url: https://github.com/OpenKaggle/rogii-wellbore-geology-research/tree/snapshot-2026-09
+version: snapshot-2026-09
+date-released: 2026-09-28
+abstract: >-
+  Source-and-evidence archive for ROGII wellbore geology selection,
+  validation, operational tooling, and metadata-only release decisions.
+keywords:
+  - Kaggle
+  - wellbore geology
+  - provenance
+  - reproducibility
