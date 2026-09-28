@@ -37,6 +37,7 @@ KERNEL_OUTPUTS = {
 
 OUT_ROOT = Path("reports/kaggle_kernel_output")
 LOG_ROOT = Path("reports/kaggle_kernel_logs")
+VALIDATOR = Path(__file__).resolve().with_name("validate_rogii_outputs.py")
 
 
 def kaggle_bin() -> Path:
@@ -85,7 +86,7 @@ def save_logs(kernel: str, output_name: str) -> None:
 
 def validate_outputs() -> int:
     result = subprocess.run(
-        [sys.executable, "scripts/validate_rogii_outputs.py"],
+        [sys.executable, str(VALIDATOR)],
         text=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
@@ -111,10 +112,9 @@ def main() -> int:
         elif "KernelWorkerStatus.ERROR" in st or "KernelWorkerStatus.CANCEL" in st:
             save_logs(kernel, output_name)
 
-    if args.validate:
-        validate_outputs()
+    validation_rc = validate_outputs() if args.validate else 0
     print(f"downloaded={downloaded}")
-    return 0
+    return validation_rc
 
 
 if __name__ == "__main__":

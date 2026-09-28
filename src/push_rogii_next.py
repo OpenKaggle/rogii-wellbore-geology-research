@@ -101,6 +101,7 @@ def push(folder: str, dry_run: bool) -> int:
     kernel_id = read_kernel_id(folder)
     print(f"next: {folder} -> {kernel_id}")
     if dry_run:
+        print("dry-run only; add --execute to push this kernel to Kaggle.")
         return 0
     result = subprocess.run(
         [str(kaggle_bin()), "kernels", "push", "-p", folder],
@@ -144,13 +145,23 @@ def maybe_push(kind: str, dry_run: bool) -> int:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--kind", choices=["gpu", "cpu", "both"], default="both")
-    parser.add_argument("--dry-run", action="store_true")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument(
+        "--execute",
+        action="store_true",
+        help="Actually push the selected kernel to Kaggle. The default is dry-run only.",
+    )
+    mode.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Retained compatibility alias; dry-run is already the default.",
+    )
     args = parser.parse_args()
 
     rc = 0
     kinds = ["gpu", "cpu"] if args.kind == "both" else [args.kind]
     for kind in kinds:
-        rc = max(rc, maybe_push(kind, args.dry_run))
+        rc = max(rc, maybe_push(kind, dry_run=not args.execute))
     return rc
 
 

@@ -1,0 +1,34 @@
+{
+  "audit_date": "2026-09-28",
+  "contains_source_row_values": false,
+  "excluded_payload_classes": [
+    "all 12 source Parquet files",
+    "all features/OOF/per-well/oracle/fold CSV files",
+    "candidate cache NPZ files",
+    "generated submissions, model weights, and official or third-party inputs"
+  ],
+  "parquet_totals": {
+    "bytes": 3962031815,
+    "files": 12,
+    "rows_across_files_nonunique": 6010554,
+    "unique_schemas": 6
+  },
+  "publication_decision": {
+    "raw_parquet": "NO-GO",
+    "raw_representative_csv": "NO-GO",
+    "regenerated_candidate_summary": "CONDITIONAL: remove oracle/small groups; ownership and competition-license review required",
+    "schema_and_digest_manifest": "GO"
+  },
+  "representative_csv": {
+    "bytes": 102852486,
+    "files": 6,
+    "raw_publication": "NO-GO"
+  },
+  "safe_release_payload": [
+    "ROGII_PUBLIC_SCHEMA_MANIFEST.json",
+    "this aggregate summary",
+    "README prose describing exclusions and controlled pseudonymization"
+  ],
+  "source_manifest": "ROGII_PUBLIC_SCHEMA_MANIFEST.json",
+  "summary_version": "rogii-public-aggregate-v1"
+}
