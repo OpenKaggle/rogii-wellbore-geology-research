@@ -1,6 +1,6 @@
 # [2026-08] ROGII Wellbore Geology Research Archive
 
-**Publication gate: TBD — competition end not stated in repo; resolve before any visibility change**
+**Publication gate: **Publication gate: 2026-08-05T23:59Z** (= rogii-wellbore-geology-prediction submission end, verified via authenticated Kaggle API 2026-11-02; already elapsed — repo is public-eligible; visibility decision is separate)**
 
 An OpenKaggle source-and-evidence archive for work around the
 [ROGII Wellbore Geology Prediction](https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction)
